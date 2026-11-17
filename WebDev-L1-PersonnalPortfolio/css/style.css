@@ -1226,9 +1226,10 @@ button {
 .contact-section {
     position: relative;
     min-height: 100vh;
-    padding: 150px 10% 60px;
+    padding: 140px 10% 60px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
 
     background:
@@ -1787,5 +1788,117 @@ button {
     .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+/* =========================================
+   OMNIVERSE - FOOTER NAVIGATION
+========================================= */
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 22px 0 25px;
+}
+
+.footer-navigation a {
+    color: #9299ad;
+    text-decoration: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    transition: color 0.3s ease;
+}
+
+.footer-navigation a:hover {
+    color: #38bdf8;
+}
+/* =========================================
+   OMNIVERSE - MOBILE FOOTER & CONTACT FIX
+========================================= */
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 90px 6% 40px !important;
+        min-height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .contact-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact-title {
+        margin-top: 25px !important;
+        font-size: clamp(2.3rem, 10vw, 3.5rem) !important;
+        line-height: 1.05 !important;
+        letter-spacing: -0.04em !important;
+    }
+
+    .contact-description {
+        font-size: 0.95rem !important;
+        margin-top: 18px !important;
+        line-height: 1.7 !important;
+        max-width: 100% !important;
+    }
+
+    .contact-button {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        margin-top: 28px !important;
+        padding: 16px 22px !important;
+        box-sizing: border-box !important;
+    }
+
+    .contact-email {
+        width: 100% !important;
+        display: flex !important;
+        box-sizing: border-box !important;
+        margin-top: 14px !important;
+    }
+
+    .site-footer {
+        margin-top: 70px !important;
+        padding-top: 35px !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .footer-navigation {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 16px !important;
+        margin: 18px 0 22px !important;
+    }
+
+    .footer-socials {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .social-button {
+        width: 100% !important;
+        min-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-bottom {
+        width: 100% !important;
+        margin-top: 25px !important;
+        padding-top: 16px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
     }
 }
