@@ -11,11 +11,13 @@ This project was developed as part of the **Oasis Infobyte Internship Program â€
 ### Desktop Version
 ![Desktop Preview 1](screenshots/Desktop1.png)
 ![Desktop Preview 2](screenshots/Desktop2.png)
+![Desktop Preview 3](screenshots/Desktop3.png)
 
 ### Mobile Version
 <div align="center">
-  <img src="screenshots/mobile1.png" alt="Mobile Preview 1" width="380" />
-  <img src="screenshots/mobile2.png" alt="Mobile Preview 2" width="380" />
+  <img src="screenshots/mobile1.png" alt="Mobile Preview 1" width="280" />
+  <img src="screenshots/mobile2.png" alt="Mobile Preview 2" width="280" />
+  <img src="screenshots/mobile3.png" alt="Mobile Preview 3" width="280" />
 </div>
 
 ---
