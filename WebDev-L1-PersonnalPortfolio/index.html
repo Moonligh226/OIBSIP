@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="OMNIVERSE — Developer Portfolio">
+
+    <title>OMNIVERSE | Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+>
+</head>
+
+<body>
+
+    <!-- Background atmosphere -->
+    <div class="background-glow"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                OMNI<span>VERSE</span><i>.</i>
+            </a>
+
+           <ul class="nav-links">
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+    <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+</ul>
+
+            <button
+    class="language-toggle"
+    id="language-toggle"
+    type="button"
+    aria-label="Switch language"
+>
+    <span class="language-option" data-lang="fr">FR</span>
+    <span class="language-separator">/</span>
+    <span class="language-option active" data-lang="en">EN</span>
+</button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+               <p class="hero-eyebrow">
+                    <span class="status-dot"></span>
+                    <span data-i18n="hero_status">AVAILABLE FOR NEW OPPORTUNITIES</span>
+                </p>
+
+                <h1 class="hero-title">
+                    <span class="title-line" data-i18n="hero_title_1">Building</span>
+                    <span class="title-line" data-i18n="hero_title_2">Beyond</span>
+                    <span class="title-line title-accent" data-i18n="hero_title_3">Limits.</span>
+                </h1>
+
+                <p class="hero-description" data-i18n="hero_description">
+                    Developer passionate about technology,
+                    creative solutions and digital experiences.
+                    Turning ideas into reality, one line at a time.
+                </p>
+
+               <div class="hero-actions">
+
+                    <a href="#projects" class="button button-primary">
+                        <span data-i18n="hero_explore">Explore my work</span>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="button button-secondary"
+                        data-i18n="hero_connect">
+                        Let's connect
+                    </a>
+
+                </div>
+
+               <div class="hero-meta">
+                    <span data-i18n="hero_role">SOFTWARE DEVELOPER</span>
+                    <span data-i18n="hero_location">BASED IN BURKINA FASO</span>
+                </div>
+
+            </div>
+
+            <!-- ABSTRACT VISUAL -->
+            <div class="hero-visual" aria-hidden="true">
+
+                <div class="visual-grid"></div>
+
+                <div class="orbital-system">
+
+                    <div class="orbital-ring ring-one"></div>
+                    <div class="orbital-ring ring-two"></div>
+                    <div class="orbital-ring ring-three"></div>
+
+                    <div class="core-orb">
+                        <div class="core-highlight"></div>
+                    </div>
+
+                    <span class="orbital-point point-one"></span>
+                    <span class="orbital-point point-two"></span>
+
+                </div>
+
+                <p class="visual-caption">
+                    FIG. 001 — DIGITAL CONSCIOUSNESS
+                </p>
+
+            </div>
+
+            <!-- Scroll indicator -->
+           <a href="#about" class="scroll-indicator">
+                <span data-i18n="hero_scroll">SCROLL TO EXPLORE</span>
+                <span class="scroll-line"></span>
+            </a>
+
+        </section>
+
+        <!-- FUTURE SECTIONS -->
+       
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="content-section about-section">
+
+   <div class="about-topline">
+    <p class="section-label" data-i18n="about_label">01 / ABOUT ME</p>
+    <span class="about-location" data-i18n="about_location">
+        BASED IN BURKINA FASO
+    </span>
+</div>
+
+<div class="about-layout">
+
+    <div class="about-heading">
+
+        <p class="about-kicker" data-i18n="about_kicker">
+            A MIND IN CONSTANT MOTION
+        </p>
+
+        <h2 class="about-title">
+            <span data-i18n="about_title_1">Curious</span><br>
+            <span data-i18n="about_title_2">by nature.</span><br>
+            <span data-i18n="about_title_3">Developer</span>
+            <span class="about-title-accent" data-i18n="about_title_4">by passion.</span>
+        </h2>
+
+        <div class="about-index">
+            <span>01</span>
+            <span class="about-index-line"></span>
+            <span data-i18n="about_index">WHO I AM</span>
+        </div>
+
+    </div>
+
+        <!-- RIGHT: INTRODUCTION -->
+        <div class="about-copy">
+
+           <div class="about-visual" aria-hidden="true">
+    <div class="visual-frame frame-back"></div>
+    <div class="visual-frame frame-front">
+        <span class="visual-code">&lt;/&gt;</span>
+        <span class="visual-caption" data-i18n="about_visual">
+            ALWAYS EXPLORING
+        </span>
+        <span class="visual-number">∞</span>
+    </div>
+    <span class="visual-coordinate">12°22' N / 1°31' W</span>
+</div>
+
+<p class="about-intro" data-i18n="about_intro">
+    I'm a software developer from Burkina Faso,
+    passionate about building useful digital solutions
+    and discovering what technology makes possible.
+</p>
+
+<p class="about-description" data-i18n="about_description_1">
+    My experience includes backend development with Spring Boot,
+    interactive interfaces with React, and database management
+    with PostgreSQL. But my interests go far beyond a single
+    technology or framework.
+</p>
+
+<p class="about-description" data-i18n="about_description_2">
+    I'm constantly learning, exploring new technologies
+    and experimenting with different tools to expand
+    my skills. For me, every project is a chance to
+    discover something new and become a better developer.
+</p>
+        </div>
+
+    </div>
+
+    <!-- AREAS OF INTEREST -->
+   <div class="about-focus">
+
+    <div class="focus-item">
+        <span>01</span>
+        <p data-i18n="about_focus_1">BACKEND DEVELOPMENT</p>
+    </div>
+
+    <div class="focus-item">
+        <span>02</span>
+        <p data-i18n="about_focus_2">WEB & FRONTEND TECHNOLOGIES</p>
+    </div>
+
+    <div class="focus-item">
+        <span>03</span>
+        <p data-i18n="about_focus_3">EXPLORING NEW TECHNOLOGIES</p>
+    </div>
+
+    <div class="focus-item">
+        <span>04</span>
+        <p data-i18n="about_focus_4">CONTINUOUS LEARNING</p>
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="content-section skills-section">
+
+    <div class="section-heading">
+    <p class="section-label" data-i18n="skills_label">02 / TECH ARSENAL</p>
+
+    <h2 class="section-title" data-i18n="skills_title">
+        My evolving toolkit.
+    </h2>
+
+    <p class="skills-intro" data-i18n="skills_intro">
+        Technologies, tools and concepts I use,
+        practice and continuously explore to build
+        meaningful digital experiences.
+    </p>
+</div>
+    
+<div class="skills-grid">
+
+    <!-- BACKEND -->
+    <article class="skill-card">
+        <span class="skill-number">01</span>
+        <h3 data-i18n="skill_backend">Backend Development</h3>
+
+        <div class="skill-technologies">
+            <span><i class="devicon-java-plain colored"></i> Java</span>
+            <span><i class="devicon-spring-original colored"></i> Spring Boot</span>
+            <span><i class="devicon-python-plain colored"></i> Python</span>
+        </div>
+    </article>
+
+    <!-- FRONTEND -->
+    <article class="skill-card">
+        <span class="skill-number">02</span>
+        <h3 data-i18n="skill_frontend">Frontend Development</h3>
+
+        <div class="skill-technologies">
+            <span><i class="devicon-html5-plain colored"></i> HTML</span>
+            <span><i class="devicon-css3-plain colored"></i> CSS</span>
+            <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            <span><i class="devicon-react-original colored"></i> React</span>
+        </div>
+    </article>
+<!-- DATABASE -->
+<article class="skill-card">
+    <span class="skill-number">03</span>
+    <h3>Database & Storage</h3>
+
+    <div class="skill-technologies">
+        <span>
+            <i class="devicon-postgresql-plain colored"></i>
+            PostgreSQL
+        </span>
+
+       <span class="minio-item">
+    <img src="assets/images/minio.svg" alt="MinIO" class="technology-logo">
+    MinIO
+</span>
+    </div>
+</article>
+   
+    <!-- TOOLS -->
+    <article class="skill-card">
+        <span class="skill-number">04</span>
+        <h3 data-i18n="skill_tools">Tools & Workflow</h3>
+
+        <div class="skill-technologies">
+            <span><i class="devicon-git-plain colored"></i> Git</span>
+            <span><i class="devicon-github-original"></i> GitHub</span>
+            <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+            <span><i class="devicon-intellij-plain colored"></i> IntelliJ</span>
+            <span><i class="devicon-postman-plain colored"></i> Postman</span>
+        </div>
+    </article>
+
+    <!-- EXPLORING -->
+    <article class="skill-card skill-card-exploring">
+        <span class="skill-number">05</span>
+        <div>
+            <h3 data-i18n="skill_exploring">Currently Exploring</h3>
+            <p class="exploring-description">
+                Always curious. Always learning.
+                Always building.
+            </p>
+        </div>
+
+        <div class="exploring-visual">
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+        </div>
+    </article>
+
+</div>
+
+</section>
+
+<!-- PROJECTS PLACEHOLDER -->
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects-section">
+
+   <div class="projects-heading">
+    <div>
+        <p class="section-label" data-i18n="projects_label">
+            03 / SELECTED WORK
+        </p>
+
+        <h2 class="section-title" data-i18n="projects_title">
+            Ideas into reality.
+        </h2>
+    </div>
+
+    <p class="projects-counter" data-i18n="projects_counter">
+        A SELECTION OF MY WORK
+    </p>
+</div>
+    <div class="projects-track">
+
+        <!-- PROJECT 01 -->
+        <article class="project-card">
+            <div class="project-visual project-visual-one">
+                <span>01</span>
+                <div class="project-symbol">✦</div>
+            </div>
+
+            <div class="project-info">
+                <p data-i18n="project_1_type">FULL-STACK WEB APPLICATION</p>
+                <h3>Prix d'Excellence</h3>
+                <span>Spring Boot · React · PostgreSQL</span>
+            </div>
+        </article>
+
+        <!-- PROJECT 02 -->
+        <article class="project-card">
+            <div class="project-visual project-visual-two">
+                <span>02</span>
+                <div class="project-symbol">◈</div>
+            </div>
+
+            <div class="project-info">
+                <p data-i18n="project_2_type">WEB DESIGN / OASIS INFOBYTE</p>
+                <h3>Landing Page</h3>
+                <span>HTML · CSS · JavaScript</span>
+            </div>
+        </article>
+
+        <!-- PROJECT 03 -->
+        <article class="project-card">
+            <div class="project-visual project-visual-three">
+                <span>03</span>
+                <div class="project-symbol">⌘</div>
+            </div>
+
+            <div class="project-info">
+                <p data-i18n="project_3_type">BACKEND DEVELOPMENT</p>
+                <h3>Task Manager</h3>
+                <span>Spring Boot · PostgreSQL</span>
+            </div>
+        </article>
+
+        <!-- PROJECT 04 -->
+        <article class="project-card">
+            <div class="project-visual project-visual-four">
+                <span>04</span>
+                <div class="project-symbol">◎</div>
+            </div>
+
+            <div class="project-info">
+                <p data-i18n="project_4_type">PERSONAL PORTFOLIO</p>
+                <h3>OMNIVERSE</h3>
+                <span>HTML · CSS · JavaScript · GSAP</span>
+            </div>
+        </article>
+
+        <!-- FUTURE PROJECTS -->
+        <article class="project-card future-project">
+            <div class="project-visual">
+                <span>05</span>
+                <div class="project-symbol">+</div>
+            </div>
+
+            <div class="project-info">
+                <p data-i18n="project_5_type">COMING SOON</p>
+                <h3 data-i18n="project_5_title">Next universe</h3>
+                <span data-i18n="project_5_description">Future project</span>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="projects-scroll-hint" data-i18n="projects_scroll">
+        SCROLL TO EXPLORE →
+    </p>
+
+</section>
+
+
+
+<!-- CONTACT + FOOTER SECTION -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+        <div class="contact-main">
+
+            <div class="contact-heading">
+
+    <p class="section-label" data-i18n="contact_label">
+        04 / ESTABLISH CONNECTION
+    </p>
+
+    <p class="contact-kicker" data-i18n="contact_kicker">
+        HAVE AN IDEA? LET'S MAKE IT REAL.
+    </p>
+
+    <h2 class="contact-title">
+        <span data-i18n="contact_title_1">Let's build</span><br>
+        <span class="contact-title-accent" data-i18n="contact_title_2">
+            something great.
+        </span>
+    </h2>
+
+</div>
+            <p class="contact-description" data-i18n="contact_description">
+    Open to new opportunities, creative collaborations
+    and exciting projects. Let's create something
+    meaningful together.
+</p>
+
+<a href="mailto:nelsonsawadogo469@gmail.com" class="contact-button">
+    <span data-i18n="contact_button">LET'S TALK</span>
+    <span class="contact-button-arrow">↗</span>
+</a>
+
+               
+<a href="mailto:nelsonsawadogo469@gmail.com"
+   class="contact-email">
+
+    <span class="contact-email-icon">
+        <i class="devicon-google-plain"></i>
+    </span>
+
+    <span class="contact-email-content">
+        <small data-i18n="contact_email_label">OR REACH ME DIRECTLY</small>
+        <span>nelsonsawadogo469@gmail.com</span>
+    </span>
+
+    <span class="contact-email-arrow">↗</span>
+
+</a>
+
+
+            </div>
+
+        </div>
+
+        <!-- INTEGRATED FOOTER -->
+        <footer class="site-footer">
+
+            <a href="#home" class="footer-logo">
+                OMNI<span>VERSE</span><i>.</i>
+            </a>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+    <a href="#home" data-i18n="footer_home">HOME</a>
+    <a href="#about" data-i18n="footer_about">ABOUT</a>
+    <a href="#projects" data-i18n="footer_projects">PROJECTS</a>
+    <a href="#skills" data-i18n="footer_skills">SKILLS</a>
+    <a href="#contact" data-i18n="footer_contact">CONTACT</a>
+</nav>
+
+            
+<div class="footer-socials">
+
+    <a href="https://github.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="social-button github-button">
+
+        <i class="devicon-github-original"></i>
+
+        <span class="social-button-text">
+            <small data-i18n="footer_github">EXPLORE MY CODE</small>
+            GitHub
+        </span>
+
+        <span class="social-arrow">↗</span>
+    </a>
+
+    <a href="https://www.linkedin.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="social-button linkedin-button">
+
+        <i class="devicon-linkedin-plain"></i>
+
+        <span class="social-button-text">
+            <small data-i18n="footer_linkedin">LET'S CONNECT</small>
+            LinkedIn
+        </span>
+
+        <span class="social-arrow">↗</span>
+    </a>
+
+</div>
+
+<div class="footer-bottom">
+    <span data-i18n="footer_copyright">© 2026 OMNIVERSE</span>
+    <span data-i18n="footer_message">DESIGNED & BUILT WITH CURIOSITY.</span>
+    <span>BURKINA FASO</span>
+</div>
+
+        </footer>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+    
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="back-to-top"
+        aria-label="Back to top"
+        title="Back to top">
+
+   <span class="back-to-top-label" data-i18n="back_to_top">
+    BACK TO TOP
+</span>
+    <span class="back-to-top-icon">↑</span>
+
+</button>
+
+<script type="module" src="/js/main.js"></script>
+
+</body>
+</html>

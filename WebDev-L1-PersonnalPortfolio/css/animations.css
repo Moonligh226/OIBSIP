@@ -1,0 +1,23 @@
+
+/* NEON ENERGY PULSE */
+
+.title-accent {
+    animation: energyPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes energyPulse {
+    from {
+        filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.25));
+    }
+
+    to {
+        filter:
+            drop-shadow(0 0 12px rgba(56, 189, 248, 0.65))
+            drop-shadow(0 0 25px rgba(139, 92, 246, 0.35));
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .title-accent {
+        animation: none;
+    }
+}
