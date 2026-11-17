@@ -3,7 +3,7 @@
    OMNIVERSE - LANGUAGE SYSTEM
 ========================================= */
 
-export const translations = {
+const translations = {
 
     en: {
         nav_about: "About",
@@ -172,3 +172,6 @@ export const translations = {
     }
 
 };
+
+// Expose globally for standalone browser usage
+window.translations = translations;

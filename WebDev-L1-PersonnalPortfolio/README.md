@@ -80,29 +80,35 @@ WebDev-L1-PersonnalPortfolio/
 
 ## 🚀 Getting Started
 
-To run the portfolio locally on your machine:
+The portfolio is designed to run seamlessly both as a standalone static application (zero installation) and through the modern Vite dev environment.
 
+### Quick Start (Standalone / Live Server)
 1. Clone the repository:
    ```bash
    git clone https://github.com/Moonligh226/OIBSIP.git
    ```
-
 2. Navigate into the portfolio directory:
    ```bash
    cd OIBSIP/WebDev-L1-PersonnalPortfolio
    ```
+3. Open `index.html` directly in any modern browser, or launch it with VS Code **Live Server**. All scripts, GSAP animations, and translations load automatically without any build steps.
 
-3. Install dependencies:
+---
+
+### Development Mode (Vite)
+To work in a local node-based development environment:
+
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-4. Start the Vite development server:
+2. Start the Vite development server:
    ```bash
    npm run dev
    ```
 
-5. Open the displayed local URL (typically `http://localhost:5173`) in your browser.
+3. Open the displayed local URL (typically `http://localhost:5173`) in your browser.
 
 ---
 

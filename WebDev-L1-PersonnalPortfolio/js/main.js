@@ -3,19 +3,13 @@
    OMNIVERSE - MAIN ENTRY POINT
 ========================================= */
 
-import "./animations.js";
-import { translations } from "./translations.js";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-
 // =========================================
 // BACK TO TOP
 // =========================================
 
 const backToTop = document.querySelector("#back-to-top");
 
-if (backToTop) {
+if (backToTop && typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
 
     gsap.set(backToTop, {
         autoAlpha: 0,
@@ -53,6 +47,16 @@ if (backToTop) {
             behavior: "smooth"
         });
     });
+
+} else if (backToTop) {
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
 }
 
 
@@ -64,7 +68,11 @@ const languageToggle = document.querySelector("#language-toggle");
 
 function setLanguage(language) {
 
-    const dictionary = translations[language];
+    const dictSource = window.translations || (typeof translations !== "undefined" ? translations : null);
+
+    if (!dictSource) return;
+
+    const dictionary = dictSource[language];
 
     if (!dictionary) return;
 
@@ -107,4 +115,4 @@ if (languageToggle) {
     setLanguage(savedLanguage);
 }
 
-console.log("OMNIVERSE initialized 🚀");
+console.log("OMNIVERSE initialized successfully.");

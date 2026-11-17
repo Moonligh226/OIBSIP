@@ -3,10 +3,9 @@
    OMNIVERSE - ANIMATION ENGINE
 ========================================= */
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+    gsap.registerPlugin(ScrollTrigger);
+}
 
 console.log("GSAP:", gsap.version);
 console.log("ScrollTrigger loaded:", ScrollTrigger);
@@ -350,7 +349,7 @@ contactTimeline
         duration: 0.7,
         ease: "back.out(1.7)"
     }, "-=0.3")
-    .from(".contact-footer span", {
+    .from(".site-footer span, .contact-footer span", {
         opacity: 0,
         y: 15,
         duration: 0.5,
