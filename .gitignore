@@ -48,4 +48,11 @@ desktop.ini
 *.sln
 *.sw?
 *.tmp
+
+# Local video assets & title cards (keep out of git)
+video_cards/
+*.mp4
+*.mov
+*.avi
+*.mkv
 *.bak

@@ -8,7 +8,7 @@ Repository containing all project submissions for the **Oasis Infobyte Internshi
 
 - **Author / GitHub:** [@Moonligh226](https://github.com/Moonligh226)
 - **Track:** Web Development & Designing
-- **Level Chosen:** **Level 1 (All 3 Tasks Completed)**
+- **Level Progression:** **Level 1 (Completed) & Level 2 (In Progress)**
 - **Official Hashtag:** `#oasisinfobyte`
 
 ---
@@ -17,9 +17,10 @@ Repository containing all project submissions for the **Oasis Infobyte Internshi
 
 | Directory | Task Title | Tech Stack | Status |
 |---|---|---|---|
-| [`WebDev-L1-LandingPage/`](./WebDev-L1-LandingPage/) | **Task 1:** Asana-Inspired Landing Page | HTML5, CSS3, Flexbox/Grid | ✅ Completed |
-| [`WebDev-L1-PersonnalPortfolio/`](./WebDev-L1-PersonnalPortfolio/) | **Task 2:** Omniverse Developer Portfolio | HTML5, CSS3, JS, GSAP, Vite | ✅ Completed |
-| [`WebDev-L1-TemperatureConverter/`](./WebDev-L1-TemperatureConverter/) | **Task 3:** ThermoCraft Pro Converter | HTML5, CSS3, Vanilla JS (Dark Mode, i18n) | ✅ Completed |
+| [`WebDev-L1-LandingPage/`](./WebDev-L1-LandingPage/) | **Level 1 - Task 1:** Asana-Inspired Landing Page | HTML5, CSS3, Flexbox/Grid | ✅ Completed |
+| [`WebDev-L1-PersonnalPortfolio/`](./WebDev-L1-PersonnalPortfolio/) | **Level 1 - Task 2:** Omniverse Developer Portfolio | HTML5, CSS3, JS, GSAP, Vite | ✅ Completed |
+| [`WebDev-L1-TemperatureConverter/`](./WebDev-L1-TemperatureConverter/) | **Level 1 - Task 3:** ThermoCraft Pro Converter | HTML5, CSS3, Vanilla JS (Dark Mode, i18n) | ✅ Completed |
+| [`WebDev-L2-Calculator/`](./WebDev-L2-Calculator/) | **Level 2 - Task 1:** CALIBRE — Liquid Glass Calculator | HTML5, CSS3 Glassmorphism, Vanilla JS (i18n FR/EN, 3D Tilt, Web Audio API) | ✅ Completed |
 
 ---
 

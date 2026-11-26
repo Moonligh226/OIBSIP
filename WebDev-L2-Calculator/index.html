@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="aurora">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALIBRE — Instrument de calcul</title>
+    <!-- Google Fonts: Space Grotesk & Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Arrière-plan atmosphérique (Liquid Glass) -->
+    <div class="ambient-background" aria-hidden="true">
+        <div class="liquid-blob blob-1"></div>
+        <div class="liquid-blob blob-2"></div>
+        <div class="liquid-blob blob-3"></div>
+        <div class="liquid-blob blob-4"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- En-tête sobre -->
+    <header class="navbar-glass">
+        <div class="nav-container">
+            <a href="#top" class="brand-logo">
+                <div class="logo-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+                        <line x1="8" y1="8" x2="16" y2="8"></line>
+                        <line x1="8" y1="13" x2="10" y2="13"></line>
+                        <line x1="14" y1="13" x2="16" y2="13"></line>
+                        <line x1="8" y1="17" x2="10" y2="17"></line>
+                        <line x1="14" y1="17" x2="16" y2="17"></line>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">CALIBRE</span>
+                </div>
+            </a>
+
+            <!-- Sélecteur d'ambiances -->
+            <div class="theme-picker-container" title="Changer l'ambiance lumineuse">
+                <span class="picker-label" data-i18n="theme_label">Ambiance</span>
+                <div class="theme-dots">
+                    <button class="theme-dot active" data-theme="aurora" title="Ambiance Aurora" aria-label="Ambiance Aurora"></button>
+                    <button class="theme-dot" data-theme="cyber" title="Ambiance Cyber" aria-label="Ambiance Cyber"></button>
+                    <button class="theme-dot" data-theme="emerald" title="Ambiance Émeraude" aria-label="Ambiance Émeraude"></button>
+                    <button class="theme-dot" data-theme="solar" title="Ambiance Solaire" aria-label="Ambiance Solaire"></button>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <div class="lang-switch" role="group" aria-label="Choisir la langue">
+                    <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <span class="project-ref" data-i18n="project_ref">OIBSIP · N2 / T1</span>
+                <a href="https://github.com/Moonligh226/OIBSIP" target="_blank" rel="noopener noreferrer" class="glass-btn-sm" title="Voir le dépôt GitHub">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="page-wrapper" id="top">
+        <section class="workspace-grid" id="calculatorSection">
+            <!-- Colonne éditoriale & outils pratiques -->
+            <div class="editorial-column">
+                <div class="intro-block">
+                    <span class="eyebrow" data-i18n="hero_eyebrow">Calculatrice de bureau</span>
+                    <h1 class="hero-title"><span data-i18n="hero_title_1">Précise, rapide,</span><br><span class="accent-underline" data-i18n="hero_title_2">sans encombre.</span></h1>
+                    <p class="hero-desc" data-i18n="hero_desc">
+                        Un outil de calcul pensé pour être agréable au quotidien : lisible au premier coup d'œil, pilotable entièrement au clavier et avec vos constantes usuelles à portée de clic.
+                    </p>
+                </div>
+
+                <!-- Constantes usuelles -->
+                <div class="glass-panel constants-dock" id="constantsPanel">
+                    <div class="panel-header-mini">
+                        <span data-i18n="constants_title">Constantes usuelles</span>
+                        <span class="panel-hint" data-i18n="constants_hint">Cliquer pour insérer</span>
+                    </div>
+                    <div class="constants-grid">
+                        <button class="constant-pill" data-value="3.1415926535" title="Nombre Pi (π)">
+                            <span class="const-sym">π</span>
+                            <span class="const-val">3.14159</span>
+                        </button>
+                        <button class="constant-pill" data-value="2.7182818284" title="Constante d'Euler (e)">
+                            <span class="const-sym">e</span>
+                            <span class="const-val">2.71828</span>
+                        </button>
+                        <button class="constant-pill" data-value="1.6180339887" title="Nombre d'Or (φ)">
+                            <span class="const-sym">φ</span>
+                            <span class="const-val">1.61803</span>
+                        </button>
+                        <button class="constant-pill" data-value="1.4142135623" title="Racine de 2 (√2)">
+                            <span class="const-sym">√2</span>
+                            <span class="const-val">1.41421</span>
+                        </button>
+                        <button class="constant-pill" data-value="6.2831853071" title="Tau (2π)">
+                            <span class="const-sym">τ</span>
+                            <span class="const-val">6.28318</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Raccourcis clavier utiles -->
+                <div class="glass-panel keyboard-guide-panel">
+                    <div class="panel-header-mini">
+                        <span data-i18n="shortcuts_title">Raccourcis clavier</span>
+                        <span class="panel-hint" data-i18n="shortcuts_hint">Pavé numérique ou clavier</span>
+                    </div>
+                    <ul class="keyboard-list">
+                        <li>
+                            <span class="key-desc" data-i18n="sc_calc">Calculer le résultat</span>
+                            <span class="key-badge" data-i18n="sc_calc_key">Entrée / =</span>
+                        </li>
+                        <li>
+                            <span class="key-desc" data-i18n="sc_clear">Remettre à zéro</span>
+                            <span class="key-badge" data-i18n="sc_clear_key">Échap</span>
+                        </li>
+                        <li>
+                            <span class="key-desc" data-i18n="sc_del">Effacer le dernier chiffre</span>
+                            <span class="key-badge" data-i18n="sc_del_key">⌫ Retour</span>
+                        </li>
+                        <li>
+                            <span class="key-desc" data-i18n="sc_pct">Pourcentage</span>
+                            <span class="key-badge">%</span>
+                        </li>
+                        <li>
+                            <span class="key-desc" data-i18n="sc_dec">Virgule décimale</span>
+                            <span class="key-badge" data-i18n="sc_dec_key">. ou ,</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Colonne Instrument : La Calculatrice -->
+            <div class="calculator-center-stage">
+                <div class="calc-top-controls">
+                    <div class="instrument-label">
+                        <span class="live-dot" aria-hidden="true"></span>
+                        <span data-i18n="model_label">MODÈLE C-01</span>
+                    </div>
+
+                    <div class="stage-actions">
+                        <button id="soundToggleBtn" class="glass-icon-btn" title="Activer / Couper le son des touches" aria-label="Son des touches">
+                            <svg class="icon sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            </svg>
+                            <svg class="icon sound-off hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <line x1="1" y1="1" x2="23" y2="23"></line>
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            </svg>
+                        </button>
+                        <button id="historyToggleBtn" class="glass-icon-btn" title="Historique des calculs" aria-label="Historique des calculs">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARTE DE LA CALCULATRICE -->
+                <section class="calculator-card" id="calculatorCard" aria-label="Calculatrice">
+                    <div class="glass-glare" id="glassGlare"></div>
+
+                    <!-- Écran d'affichage -->
+                    <div class="screen-container">
+                        <div class="screen-top-bar">
+                            <div class="screen-status">
+                                <span class="status-indicator">DEC</span>
+                                <span id="memoryIndicator" class="status-indicator hidden">M</span>
+                                <button id="copyResultBtn" class="copy-btn" type="button" title="Copier le résultat" aria-label="Copier le résultat">
+                                    <svg class="icon-copy" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <svg class="icon-check hidden" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span class="copy-label" data-i18n="copy_btn">Copier</span>
+                                </button>
+                            </div>
+                            <div class="screen-equation" id="equationDisplay">0</div>
+                        </div>
+                        <div class="screen-main">
+                            <div class="screen-output" id="primaryDisplay" aria-live="polite" aria-atomic="true">0</div>
+                        </div>
+                    </div>
+
+                    <!-- Fonctions rapides -->
+                    <div class="scientific-quick-bar">
+                        <button class="sci-btn" data-sci="sqrt" title="Racine carrée (√x)">√x</button>
+                        <button class="sci-btn" data-sci="square" title="Élever au carré (x²)">x²</button>
+                        <button class="sci-btn" data-sci="inverse" title="Inverse (1/x)">¹/x</button>
+                        <button class="sci-btn" data-sci="random" title="Nombre aléatoire (0..1)">RND</button>
+                    </div>
+
+                    <!-- Clavier -->
+                    <div class="keypad-grid">
+                        <button class="key func" data-action="all-clear" data-key="Escape" aria-label="Tout effacer">
+                            <span class="key-content">AC</span>
+                        </button>
+                        <button class="key func" data-action="delete" data-key="Backspace" aria-label="Supprimer le dernier chiffre">
+                            <span class="key-content">⌫</span>
+                        </button>
+                        <button class="key func" data-action="percent" data-key="%" aria-label="Pourcentage">
+                            <span class="key-content">%</span>
+                        </button>
+                        <button class="key operator" data-operator="/" data-key="/" aria-label="Diviser">
+                            <span class="key-content">÷</span>
+                        </button>
+
+                        <button class="key number" data-number="7" data-key="7">
+                            <span class="key-content">7</span>
+                        </button>
+                        <button class="key number" data-number="8" data-key="8">
+                            <span class="key-content">8</span>
+                        </button>
+                        <button class="key number" data-number="9" data-key="9">
+                            <span class="key-content">9</span>
+                        </button>
+                        <button class="key operator" data-operator="*" data-key="*" aria-label="Multiplier">
+                            <span class="key-content">×</span>
+                        </button>
+
+                        <button class="key number" data-number="4" data-key="4">
+                            <span class="key-content">4</span>
+                        </button>
+                        <button class="key number" data-number="5" data-key="5">
+                            <span class="key-content">5</span>
+                        </button>
+                        <button class="key number" data-number="6" data-key="6">
+                            <span class="key-content">6</span>
+                        </button>
+                        <button class="key operator" data-operator="-" data-key="-" aria-label="Soustraire">
+                            <span class="key-content">−</span>
+                        </button>
+
+                        <button class="key number" data-number="1" data-key="1">
+                            <span class="key-content">1</span>
+                        </button>
+                        <button class="key number" data-number="2" data-key="2">
+                            <span class="key-content">2</span>
+                        </button>
+                        <button class="key number" data-number="3" data-key="3">
+                            <span class="key-content">3</span>
+                        </button>
+                        <button class="key operator" data-operator="+" data-key="+" aria-label="Additionner">
+                            <span class="key-content">+</span>
+                        </button>
+
+                        <button class="key number special" data-action="negate" data-key="±" aria-label="Changer le signe">
+                            <span class="key-content">±</span>
+                        </button>
+                        <button class="key number" data-number="0" data-key="0">
+                            <span class="key-content">0</span>
+                        </button>
+                        <button class="key number" data-action="decimal" data-key="." aria-label="Virgule décimale">
+                            <span class="key-content">.</span>
+                        </button>
+                        <button class="key equals" data-action="calculate" data-key="Enter" aria-label="Calculer le résultat">
+                            <span class="key-content">=</span>
+                        </button>
+                    </div>
+
+                    <!-- Volet Historique -->
+                    <aside class="history-drawer" id="historyDrawer" aria-hidden="true">
+                        <div class="drawer-header">
+                            <h3 data-i18n="history_title">Historique</h3>
+                            <div class="drawer-actions">
+                                <button id="clearHistoryBtn" class="btn-text-danger" title="Vider l'historique" data-i18n="history_clear">Vider</button>
+                                <button id="closeHistoryBtn" class="btn-close" aria-label="Fermer l'historique">✕</button>
+                            </div>
+                        </div>
+                        <div class="drawer-content" id="historyList">
+                            <div class="empty-history">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 14 14"></polyline>
+                                </svg>
+                                <p data-i18n="history_empty_title">Aucun calcul enregistré</p>
+                                <span data-i18n="history_empty_sub">Vos dernières opérations apparaîtront ici.</span>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+        </section>
+
+        <!-- Section centrée sur l'usage réel (zéro jargon technique) -->
+        <section class="comfort-section" id="comfortSection">
+            <div class="section-header-inline">
+                <span class="eyebrow" data-i18n="comfort_eyebrow">Pensé pour l'usage</span>
+                <h2 class="section-heading" data-i18n="comfort_heading">Ce qui change vraiment quand on s'en sert</h2>
+            </div>
+
+            <div class="comfort-grid">
+                <article class="comfort-card glass-panel">
+                    <span class="comfort-index">01</span>
+                    <h3 class="comfort-title" data-i18n="c1_title">Tout passe par le clavier</h3>
+                    <p class="comfort-text" data-i18n="c1_text">
+                        Tapez vos opérations directement au pavé numérique, validez avec Entrée, corrigez avec Retour ou repartez de zéro avec Échap sans toucher à la souris.
+                    </p>
+                </article>
+
+                <article class="comfort-card glass-panel">
+                    <span class="comfort-index">02</span>
+                    <h3 class="comfort-title" data-i18n="c2_title">Vos calculs restent en mémoire</h3>
+                    <p class="comfort-text" data-i18n="c2_text">
+                        Besoin de vérifier un montant tapé il y a cinq minutes ? Ouvrez l'historique, cliquez sur le résultat et reprenez votre calcul là où vous l'aviez laissé.
+                    </p>
+                </article>
+
+                <article class="comfort-card glass-panel">
+                    <span class="comfort-index">03</span>
+                    <h3 class="comfort-title" data-i18n="c3_title">Lisible et discret</h3>
+                    <p class="comfort-text" data-i18n="c3_text">
+                        Chiffres alignés, copie du résultat en un clic, quatre ambiances de couleur selon votre humeur et un léger clic sonore désactivable à tout moment.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Vrai Footer structuré -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-brand-row">
+                        <span class="brand-name">CALIBRE</span>
+                        <span class="footer-version">v2.1</span>
+                    </div>
+                    <p class="footer-description" data-i18n="footer_desc">
+                        Calculatrice web réalisée dans le cadre du programme de stage Oasis Infobyte (OIBSIP — Développement Web, Niveau 2 · Tâche 1).
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-heading" data-i18n="footer_nav">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#calculatorSection" data-i18n="nav_calc">Calculatrice</a></li>
+                        <li><a href="#constantsPanel" data-i18n="nav_const">Constantes usuelles</a></li>
+                        <li><a href="#comfortSection" data-i18n="nav_comfort">Confort d'usage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-heading" data-i18n="footer_proj">Projet</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/Moonligh226/OIBSIP" target="_blank" rel="noopener noreferrer" data-i18n="footer_repo">Dépôt GitHub (OIBSIP)</a></li>
+                        <li><a href="https://github.com/Moonligh226" target="_blank" rel="noopener noreferrer" data-i18n="footer_profile">Profil @Moonligh226</a></li>
+                        <li><span class="footer-static-item" data-i18n="footer_program">Programme Oasis Infobyte</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 @Moonligh226 — Oasis Infobyte Internship Program</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
